@@ -142,14 +142,14 @@ class CarouselPanel extends React.Component{
     this.startTimer();
   }
 
-  startTimer = ()=>{
+  startTimer = ()=> {
     this.timer = setInterval(
       ()=> this.nextSlide(),
       interval);
   };
 
   stopTimer = ()=> {
-    this.timer && clearInterval(this.timer);
+    clearInterval(this.timer);
   };
 
   componentWillUnmount() {
@@ -177,7 +177,7 @@ class CarouselPanel extends React.Component{
                 );
               })}
           </div>
-          </div>
+        </div>
       </div>
     );
   }
