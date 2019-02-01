@@ -10,8 +10,6 @@ const imageURLs = [
     "https://www.jssor.com/demos/img/gallery/980x380/004.jpg"
 ];
 
-const interval = 6000;
-
 class ImageSlide extends React.Component{
   render(){
     return (
@@ -145,7 +143,7 @@ class CarouselPanel extends React.Component{
   startTimer = ()=> {
     this.timer = setInterval(
       ()=> this.nextSlide(),
-      interval);
+      6000);
   };
 
   stopTimer = ()=> {
