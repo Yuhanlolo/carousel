@@ -1,0 +1,116 @@
+img{
+    width: 100%;
+    height: auto;
+  }
+
+.animate-left{
+    position: relative;
+    animation: animateleft .75s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes animateleft{
+        from{
+            left: -300px;
+            opacity: 0.5
+        } to{
+            left: 0;
+            opacity: 1
+        }
+    }
+
+.animate-right{
+    position: relative;
+    animation: animateright .75s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes animateright{
+    from{
+        right: -300px;
+        opacity: 0.5
+    } to{
+        right: 0;
+        opacity: 1
+    }
+}
+
+
+.container:after,.container:before{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.container{
+    padding: 0.01em 16px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow {
+	border-style: solid;
+	border-width: 0.1em 0.1em 0 0;
+	content: '';
+	height: 0.45em;
+	position: absolute;
+	transform: rotate(-45deg);
+    width: 0.45em;
+    top: 40%;
+    display: block;
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+    opacity: .75;
+    transform: translateY(-50%);
+    transition: opacity .15s cubic-bezier(.4, 0, 1, 1);
+    zoom: 250%;
+}
+
+.arrow.left {
+    float: left;
+    left: 10%;
+	transform: rotate(-135deg);
+}
+
+.arrow.right {
+    float: right;
+    right: 10%;
+	transform: rotate(45deg);
+}
+  
+.arrow.hover {
+    color: rgb(0, 0, 0);
+}
+
+h2.title{ 
+    text-align: center;
+    margin-top: 20;
+    margin-bottom: 20;
+    font-size: 200%;
+    overflow: hidden;
+  }
+
+  .slide-box{
+    overflow: hidden; 
+  }
+
+  .indicators {
+    text-align:center;
+  }
+
+  .indicator {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .indicator:hover {
+    background-color: #717171;
+  }
