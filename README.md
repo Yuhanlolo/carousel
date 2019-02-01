@@ -19,4 +19,4 @@ The fastest way to checkout the demo is opening the `index.html` (under the buil
 1. [Chevron in CSS](https://codepen.io/jonneal/pen/kptBs)
 2. [W3CSS](https://www.w3schools.com/cssref/pr_class_position.asp)
 3. [The CSS trick of restarting animation](https://css-tricks.com/restart-css-animation/)
-4. [React Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)npm
+4. [React Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
